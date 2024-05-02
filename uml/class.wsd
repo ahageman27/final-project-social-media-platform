@@ -1,0 +1,19 @@
+@startuml
+
+left to right direction
+
+:Person:
+:Admin:
+
+package system_flow {
+    (Person) --> (Login)
+    (Login) --> (Homepage)
+    (Login) --> (View Posts)
+    (Admin) --> (Active Users)
+    (Admin) --> (Public Posts)
+    (Admin) --> (User Rules)
+    (Admin) --> (Post Rules)
+    (Admin) --> (Delete Account)
+    (Admin) --> (Delete Post)
+    (Delete Notification) --> (Person)
+}

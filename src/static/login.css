@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    margin-top: 100px;
+}
+.border {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+.header {
+    text-align: center;
+}
+.word {
+    color: #007bff;
+}
+.msg {
+    color: red;
+    text-align: center;
+}
+.bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+.textbox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}

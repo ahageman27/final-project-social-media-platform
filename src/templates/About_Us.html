@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutUs.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Side navigation styles */
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidenav ul li {
+            padding: 8px 8px 8px 16px;
+        }
+
+        .sidenav ul li a {
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .sidenav ul li a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+                margin-top: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Side navigation -->
+    <nav class="sidenav">
+        <ul>
+            <img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo">
+            <li><h5 class="text-white">{{ full_name }}</h5></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('updateAccount') }}">Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('chat') }}">Chat</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('post') }}">Post</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact-Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}" class="btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our platform! We are dedicated to creating an interactive and engaging online space where users can connect, collaborate, and communicate with one another. Our goal is to foster a sense of community and provide users with the tools they need to engage in meaningful interactions and relationships.</p>
+        
+        <h2>Project Description</h2>
+        <p>Our project aims to create an interactive and engaging online platform that fosters communication, collaboration, and connection among users from diverse backgrounds and interests. In today's digital age, where social interaction and networking have become integral parts of everyday life, our platform seeks to provide a dynamic space where individuals can interact, share ideas, and build communities.</p>
+
+        <h3>Vision</h3>
+        <p>Our vision is to empower users by providing them with a versatile platform that facilitates meaningful interactions and relationships. We envision a platform where users can express themselves freely, engage in constructive discussions, and explore new ideas in a supportive and inclusive environment.</p>
+
+        <h3>Features</h3>
+        <p>Our platform offers a wide range of features designed to enhance the user experience and encourage active participation. Some of the key features include:</p>
+        <ul>
+            <li>User Profiles</li>
+            <li>Messaging and Chat</li>
+            <li>Post Sharing</li>
+            <li>Group Creation and Management</li>
+            <li>Interactive Features</li>
+        </ul>
+
+        <h3>Community Building</h3>
+        <p>At the heart of our project is the goal of fostering a vibrant and inclusive community where users feel welcome, valued, and connected. Through shared interests, shared experiences, and shared values, our platform brings people together and creates opportunities for collaboration, learning, and growth.</p>
+
+        <h3>Impact</h3>
+        <p>We believe that our project has the potential to make a positive impact on individuals, communities, and society as a whole. By promoting communication, collaboration, and connection, we aim to empower users to build meaningful relationships, exchange knowledge and ideas, and contribute to positive social change.</p>
+
+        <h3>Conclusion</h3>
+        <p>In conclusion, our project is driven by a passion for creating a dynamic and engaging online platform that brings people together, fosters community, and facilitates meaningful interactions. We invite you to join us on this journey as we work towards building a better, more connected world through technology. Thank you for your support!</p>
+    </div>
+</body>
+</html>

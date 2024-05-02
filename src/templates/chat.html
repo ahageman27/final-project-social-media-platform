@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .chat-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .chat-history {
+            height: 300px;
+            overflow-y: scroll;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        
+        form {
+            display: flex;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        
+        button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Gray background color */
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the links inside the navigation */
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul li {
+    padding: 8px 8px 8px 16px;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.sidenav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Main content */
+.main-content {
+    margin-left: 200px; /* Same width as the sidebar */
+    padding: 16px;
+}
+
+        
+    </style>
+</head>
+<body>
+
+
+      <!-- Side navigation -->
+      <nav class="sidenav">
+        <ul>
+            
+            
+            <img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo">
+            <li><h5 class="text-white">{{full_name }}</h5></li> <!-- Display the full name with white smoke color -->
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('updateAccount') }}">Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('chat') }}">Chat</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('post') }}">Post</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact-Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('logout')}}" class="btn">Logout</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="chat-container">
+        <div class="chat-history" id="chat-history">
+            <!-- Chat history will be displayed here -->
+        </div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

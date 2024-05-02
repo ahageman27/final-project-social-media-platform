@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Base styles */
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul li {
+    padding: 8px 8px 8px 16px;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidenav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Side navigation -->
+<nav class="sidenav">
+    <ul>
+        <li><img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo"></li>
+        <li><h5 class="text-white">{{ full_name }}</h5></li>
+        <li><a href="{{ url_for('updateAccount') }}">Account</a></li>
+        <li><a href="{{ url_for('chat') }}">Chat</a></li>
+        <li><a href="{{ url_for('post') }}">Post</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact-Us</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('logout') }}" class="btn btn-primary">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="{{ url_for('contact') }}" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

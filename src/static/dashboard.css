@@ -1,0 +1,41 @@
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Gray background color */
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the links inside the navigation */
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul li {
+    padding: 8px 8px 8px 16px;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.sidenav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Main content */
+.main-content {
+    margin-left: 200px; /* Same width as the sidebar */
+    padding: 16px;
+}

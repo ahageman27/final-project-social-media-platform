@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        /* Add your custom CSS here if needed */
+
+        /* Custom CSS for Update Profile Page */
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Google Font Roboto for better readability */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+/* Side Navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #343a40; /* Dark background color */
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul li {
+    padding: 8px 8px 8px 16px;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #ccc; /* Light text color */
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.sidenav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px; /* Same width as the sidebar */
+    padding: 20px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px; /* Add space between form elements */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light border color */
+    border-radius: 5px; /* Rounded corners for form controls */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Primary button border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    border-color: #0056b3; /* Darker border color on hover */
+}
+
+/* Responsive Design for all devices */
+@media (max-width: 768px) {
+    /* Reduce the width of the sidebar for medium devices and below */
+    .sidenav {
+        width: 150px;
+    }
+    
+    /* Adjust margin for main content to make space for sidebar */
+    .main-content {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Reduce the width of the sidebar for small devices and below */
+    .sidenav {
+        width: 100px;
+    }
+    
+    /* Adjust margin for main content to make space for sidebar */
+    .main-content {
+        margin-left: 100px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Side navigation -->
+<nav class="sidenav">
+    <ul> 
+        <img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo">
+        <li><h5 class="text-white">{{ user_info.full_name }}</h5></li> <!-- Display the full name with white smoke color -->
+        <li><a href="{{ url_for('chat') }}">Chat</a></li>
+        <li><a href="{{ url_for('post') }}">Post</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact-Us</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('logout')}}">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="main-content">
+    <div class="container mt-5">
+        <h2 class="mb-4">Update Profile</h2>
+        <form action="{{ url_for('updateAccount') }}" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ user_info.email }}" required>
+            </div>
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user_info.full_name }}" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" value="{{ user_info.phone }}" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country" value="{{ user_info.country }}" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Male" {% if user_info.gender == 'Male' %} selected {% endif %}>Male</option>
+                    <option value="Female" {% if user_info.gender == 'Female' %} selected {% endif %}>Female</option>
+                    <option value="Other<" {% if user_info.gender == 'Other' %} selected {% endif %}>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" class="form-control" id="birthday" name="birthday" value="{{ user_info.birthday }}" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

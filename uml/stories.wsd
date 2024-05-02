@@ -1,0 +1,25 @@
+@startuml
+
+participant "User" as User
+participant "Administrator" as Admin
+participant "Homepage" as Home
+participant "Feed" as Feed
+participant "Post" as Post
+participant "Dataset" as Data
+
+== Admin Deleting Account ==
+
+Admin -> Data: Admin Access Rule Data from website
+Data -> Admin: Presents Rules to Admin
+Feed -> Admin: Feed Displays Posts for Admins to check
+Admin -> Feed: Sets a post for Deletion
+Feed -> Post: Selects post to be Deleted
+Post -> Data: Selected post is checked in the data
+Data -> Post: Post is deleted from data
+Post -> Feed: Post no longer is available in the feed
+Feed -> Admin: Shows to Admin that Post has been Deleted
+Admin -> Home: Sets an account for Deletion
+Home -> Data: Selected Account is checked in the data
+Data -> Home: Account is deleted from data
+Home -> Admin: Shows account is deleted from the page
+Home -> User: Notifies User that account is deleted and no longer available
