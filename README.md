@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/_PlaFtPA)
 # Instructions
 
-This final project involves working in groups of 3 to 5 members on a web app. The goal is to apply key software engineering practices discussed throughout the semester. You and your team will have the freedom to choose what to implement during this final project, as long as the requirements described below are met.
+This final project involves working in groups of 3 to 5 members on a web app. The goal is to apply key software engineering practices discussed throughout the semester. You and your team will have the freedom to choose what to implement during this final project, as long as the requirements described below are met. 
 
 # Requirements 
 
