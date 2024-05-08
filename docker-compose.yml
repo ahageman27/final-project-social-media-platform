@@ -1,0 +1,40 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    restart: always
+    depends_on:
+      - db
+    # networks:
+      # - backend
+
+  phpmyadmin:
+    platform: linux/x86_64
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
+      - MYSQL_DB=mysql
+    ports:
+      - '8080:80'
+
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=mysql
+    ports:
+    - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

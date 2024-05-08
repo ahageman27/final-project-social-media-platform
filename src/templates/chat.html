@@ -112,10 +112,8 @@
             
             <img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo">
             <li><h5 class="text-white">{{full_name }}</h5></li> <!-- Display the full name with white smoke color -->
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('updateAccount') }}">Account</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('chat') }}">Chat</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('post') }}">Post</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact-Us</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('logout')}}" class="btn">Logout</a></li>
         </ul>
