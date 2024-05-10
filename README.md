@@ -51,7 +51,7 @@ Feel free to add other folders as you see fit.
 Commit this **README.md** file with the link of your project's GitHub repository below: 
 
 ```
-GitHub repository: <URL>
+GitHub repository: <  https://github.com/ahageman27/final-project-social-media-platform.git  >
 ```
 
 # Rubric
@@ -165,6 +165,12 @@ Use the observations column to report problems encountered during a sprint and/o
 # Testing 
 
 Share in this section the results of the tests performed to attest to the quality of the developed product, including the coverage of the tests in relation to the written code. There is no minimum code coverage expectation for your tests, other than expecting "some" coverage through at least one white-box and one black-box test.
+
+|#|Tests|Start|End|Done|Observations|
+|---|---|---|---|---|---|
+|1|White-Box|05/08/24|05/10/24|x|no test running in 0.05s|
+|2|Black-Box|05/08/24|05/10/24|x|no test running in 0.05s|
+|3|Coverage Report|05/08/24|05/10/24|x|no test running in 0.05s, no coverage report obtained|
 
 # Deployment 
 
