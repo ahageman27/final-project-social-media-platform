@@ -1,6 +1,6 @@
 # Sprint Planning
 
-Date/Time: 4/30/2024 @ 2:32pm
+## Date/Time: 4/30/2024 @ 2:32pm
 Participants: Ivan, Hassan, Reed, Andy, Alex
 ```
 Database we want to use [Stick to ONE DB]:
@@ -73,7 +73,7 @@ Participants: Ivan, Hassan, Reed, Andy, Alex
 
 # Sprint Review
 
-Date/Time: 5/05/2024 @ 7:30pm  AND ALSO ON 5/07/24 @7:30pm
+## Date/Time: 5/05/2024 @ 7:30pm  AND ALSO ON 5/07/24 @7:30pm
 
 Participants: Reed, Ivan, Hassan, Andy
 
@@ -89,7 +89,7 @@ We are currently working on touching up the finalized code, making sure we hit a
  
 # Sprint Retrospective
 
-Date/Time: 5/09/2024 @ 8:00pm
+## Date/Time: 5/09/2024 @ 8:00pm
 
 Participants:  Hassan, Reed, Ivan, Andy, Alex
 
