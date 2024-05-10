@@ -19,13 +19,13 @@ What do we want to accomplish
 Participants: Ivan, Hassan, Reed, Andy, Alex
 
 ### Hassan:
-##### • Overview of what they got done:
+##### • Overview of what Hassan got done:
 ```
 > Got the foundations of the code put in, and started working on our User-Stories #5 & #6
 ```
-##### • They are currently working on finishing User-Stories #5 and #6
+##### • Hassan is currently working on finishing User-Stories #5 and #6
 
-##### • Current Obstacles are:
+##### • Hassan's Current Obstacles are:
 ```
 > No Current Obstacles
 ```
@@ -44,7 +44,7 @@ Participants: Ivan, Hassan, Reed, Andy, Alex
 > May adjust code and use SQLAlchemy to fix
 ```
 ---------------------------------------------------------------------------------------
-### Alex: US#4
+### Alex:
 ##### • Overview of what Alex's got done:
 ```
 > Setup our repository we are turning in
@@ -75,7 +75,7 @@ Participants: Ivan, Hassan, Reed, Andy, Alex
 
 ## Date/Time: 5/05/2024 @ 7:30pm  AND ALSO ON 5/07/24 @7:30pm
 
-Participants: Reed, Ivan, Hassan, Andy
+Participants: Reed, Ivan, Hassan, Andy,
 
 #### Overview:
 ```
@@ -108,10 +108,11 @@ Participants:  Hassan, Reed, Ivan, Andy, Alex
 
 ## What's our next move:
 ```
+- have one final meeting together as a team on 5/10/24 to make sure everything is in working order for submission.
 - Make sure the 'dev' branch is 100% working and updated to push fully into the main 'stable' branch.
 - Touch up the code and repository as needed.
 - Implement a testing phase of the application
-- Do a finally check of all the requirements
-- Make sure Professor can access our repository
+- Do a final check of all the requirements
+- Make sure the Professor can access our repository
 - Push & Commit 'final submission' and be DONE!
 ```
