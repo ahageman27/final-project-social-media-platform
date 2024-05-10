@@ -157,7 +157,8 @@ This section should be used to describe how the scrum methodology was used in th
 
 |Sprint#|Goals|Start|End|Done|Observations|
 |---|---|---|---|---|---|
-|1|US#1, US#2, ...|mm/dd/23|mm/dd/23|US#1|...|
+|1|US#1, US#2, US#3, US#4 |04/23/24|05/02/24|US#1, US#2, US#3, US#4|...|
+|2|US#5, US#6, Dockerfile, Testing & Submission |05/02/24|05/10/24|US#5, US#6, Dockerfile, Testing & Submission|...|
 
 Use the observations column to report problems encountered during a sprint and/or to reflect on how the team has continuously improved its work. If you prefer, you can use the same format used in the project 2 (sprint markdown files). 
 
