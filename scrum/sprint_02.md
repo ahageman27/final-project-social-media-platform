@@ -2,18 +2,17 @@
 
 Date/Time: 4/30/2024 @ 2:32pm
 Participants: Ivan, Hassan, Reed, Andy, Alex
-
-> Database we want to use [Stick to ONE DB]:
+```
+Database we want to use [Stick to ONE DB]:
 	-SQL
 	- manage the database {phpMyAdmin}
-~ Something like Twitter, you sign up/ create an account > have a ‘home’ page where you post your stuff > feed for from all the other users and their posts.
-
-Administrator user > can lookup users > delete user accounts > delete posts
-
+```
 What do we want to accomplish
+```
 >SETUP REPOSITORY
 >GET WHAT HASSAN HAS IN THE dev branch
 >WORK on US#5 and US#6
+```
 
 # Daily Scrums
 ## Date/Time: 05/02/24 - 3:30pm
