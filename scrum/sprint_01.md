@@ -1,6 +1,6 @@
 # Sprint Planning
 
-Date/Time: 4/23/2024 @ 3:00PM
+## Date/Time: 4/23/2024 @ 3:00PM
 
 Participants: Reed, Hassan, Ivan, Andy
 
@@ -20,11 +20,12 @@ Where Users can sign up/sign in and can access and post things to their own 'hom
 
 Participants: Reed, Hassan, Ivan, Andy, Alex
 
-Ivan has setup our user-stories, class diagram, and use-cases for this project, and we have Hassan's initial commit in the repository from which we are going to be working from. We have developed a strong idea of where we want our project to go, and making sure we hit all the requirements
+Ivan has setup our user-stories, class diagram, and use-cases for this project, and we have Hassan's initial commit in the repository from which we are going to be working from. We have developed a strong idea of where we want our project to go, and making sure we hit all the requirements. We have officially began working on the code for our application, getting the bare-bones structure down first and already working from there.
+
 
 # Sprint Review
 
-Date/Time: 4/25/2024 @3:00pm
+## Date/Time: 4/25/2024 @3:00pm
 
 Participants: Reed, Hassan, Ivan, Andy, Alex
 
@@ -32,13 +33,14 @@ We have gotten started on a good foundation for our project, created our user-st
 ```
 Hassan: US#1 & US#2
 Reed: US#3
-Ivan: US#4
+Ivan: Diagrams, User-Stories and their Points, and US#4
+Alex: Create Submission Repository
 ```
 
 # Sprint Retrospective
 
-Date/Time: 4/25/2024 @ 3:30pm
+## Date/Time: 4/25/2024 @ 3:30pm
 
 Participants: Reed, Hassan, Ivan, Andy, Alex
 
-Although, this was mainly just initial setup and planning for our project, things have gone really well, and we are all on the same page of what we want our application to do, keep it simple but hit all the marks we need.
+Although, this sprint mainly consisted of just initial setup and planning for our project, things have gone very well, and we are all on the same page of what we want our application to do, keep it simple but hit all the marks we need. We have no current obstacles besides our time-restraint with this project going forward.
