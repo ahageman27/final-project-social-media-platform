@@ -20,9 +20,10 @@
                     </div>
                     <form action="{{ url_for('login') }}" method="post">
                         <div class="msg">{{ msg }}</div>
-                        <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox form-control mb-3" required>
-                        <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox form-control mb-3" required>
-                        <input type="submit" class="btn btn-primary" value="Sign In">
+                        {{ login_form.hidden_tag() }}
+                        {{ login_form.username(placeholder="Enter Your Username", class="textbox form-control mb-3") }}
+                        {{ login_form.password(placeholder="Enter Your Password", class="textbox form-control mb-3") }}
+                        {{ login_form.log_in() }}
                     </form>
                     <p class="bottom">Don't have an account? <a class="bottom" href="{{ url_for('register') }}">Sign Up here</a></p>
                 </div>

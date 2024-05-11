@@ -110,10 +110,8 @@ body {
     <ul>
         <li><img src="{{ url_for('.static', filename='profile.png') }}" alt="Logo"></li>
         <li><h5 class="text-white">{{ full_name }}</h5></li>
-        <li><a href="{{ url_for('updateAccount') }}">Account</a></li>
         <li><a href="{{ url_for('chat') }}">Chat</a></li>
         <li><a href="{{ url_for('post') }}">Post</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact-Us</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
         <li><a href="{{ url_for('logout') }}" class="btn btn-primary">Logout</a></li>
     </ul>
