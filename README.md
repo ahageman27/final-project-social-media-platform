@@ -150,6 +150,7 @@ At least one user story, not related to user creation or authentication, must be
 ## Model 
 
 At a minimum, this section should have a class diagram that succinctly describes the model classes used in the project, including their associations.
+![Class Diagram](uml/Class_diagram.png)
 
 # Development Process 
 
